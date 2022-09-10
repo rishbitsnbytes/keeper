@@ -1,0 +1,82 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+/* Variables */
+
+:root {
+    /* Font Styles */
+    font-family: 'PT Sans', sans-serif;
+
+
+    /* Color Variables */
+
+    /* Body or Main Colors */
+    --color-primary: #BEAEE2; 
+    --color-secondary: #F7DBF0;
+    --color-tertiary: #74979A;
+    --color-quarternary: #CDF0EA;
+
+    --color-bg: #FAFAFA;
+    --color-primary-bg: #dbe7e4;
+    --color-secondary-bg: #c5dedd;
+    --color-tertiary-bg: #041C32;
+
+    /* Declarative Commonly used colors */
+    --gray-1: #F5F5F5;
+    --gray-3: #F1F1F1;
+    --gray-4: #D3D3D3;
+    --gray-5: #C0C0C0;
+    --gray-7: #A9A9A9;
+    --gray-9: #808080;
+    --gray-10: #303030;
+    --black: #000000;
+    --white: #FFFFFF;
+    --black-shade-1: #181818;
+    --black-shade-2: #101010;
+    --black-shade-3: #080808;
+
+    /* Typography Colors */
+    --color-text-primary: var(--black-shade-2);
+    --color-text-heading: var(--black);
+    --color-text-sub-heading: var(--black-shade-1);
+    --color-text-dimmed: var(--gray-9);
+    --color-text-active: var(--color-tertiary);
+
+    /* Shadow Colors */
+    --color-shadow-bg: var(--gray-9);
+
+    /* Modal Background Colors */
+    --color-modal-bg: rgba(247, 219, 240, 0.5);
+
+
+    /* Input Form colors */
+    --color-form-element-border: var(--black);
+    --color-form-element-border-focus: var(--color-primary);
+    --color-form-element-border-error: var(--color-error);
+    --color-form-text-placeholder: var(--gray-4);
+    --color-form-element-disabled: var(--gray-9);
+
+    /* Feedback Alert Colors */
+    --color-warning: #eed202;
+    --color-error: #FF0000;
+    --color-success: #009E60;
+    --color-alert-primary-bg: #7FD2E6;
+    --color-alert-primary-text: #29438b;
+    --color-alert-secondary-bg: #eaeaec;
+    --color-alert-secondary-text: #696b79;
+    --color-alert-success-bg: #84f1c9;
+    --color-alert-success-text: #1b7052;
+    --color-alert-warning-bg: #ffe7c5;
+    --color-alert-warning-text: #ff9204;
+    --color-alert-error-bg: #fcc5c5;
+    --color-alert-error-text: #dc3545;
+
+    /* Badge Colors */
+    --color-online: #00FF00;
+    --color-offline: #FF0000;
+    --color-idle: #D3D3D3;
+    --color-badge-bg: #FF0000;
+    --color-badge-text: #ffffff;
+
+    /* End of Color Variables*/
+}
