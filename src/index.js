@@ -1,14 +1,25 @@
+import App from "App";
+import { makeServer } from "server";
+import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from "contexts";
+import Portal from "Portal";
+import { ScrollToTop } from "utils";
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import { makeServer } from "./server";
 
 // Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <AuthProvider>
+        <ScrollToTop>
+          <Portal />
+          <App />
+        </ScrollToTop>
+      </AuthProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

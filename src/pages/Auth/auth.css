@@ -1,0 +1,87 @@
+.auth-main {
+	min-height: 90vh;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.auth-wrapper {
+	width: 100%;
+}
+
+.auth-form input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-tertiary);
+    border-radius: var(--br-md);
+	color: var(--color-tertiary);
+}
+
+.auth-form input:not([type="checkbox"]).input-error {
+    border: 2px solid var(--color-form-element-border-error);
+    border-radius: var(--br-md);
+}
+
+.auth-form input[type="checkbox"] {
+    color: var(--color-tertiary);
+    accent-color: var(--color-tertiary);
+    width: 2rem;
+    height: 2rem;
+}
+
+.auth-form input:focus {
+    border: 2px solid var(--color-tertiary);
+    box-shadow: 0px 0px 20px 2px var(--color-secondary);
+}
+
+.auth-form .error-text {
+	color: var(--color-form-element-border-error);
+}
+
+.auth-container {
+    box-shadow: 0px 0px 10px 5px var(--color-secondary);
+	max-width: 450px;
+}
+
+.auth-container.signup-container {
+	max-width: 500px;
+}
+
+.auth-container.logout-container {
+	height: 300px;
+	max-width: 600px;
+}
+
+.auth-form .password-eye {
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+.auth-form .password-eye:focus i {
+    box-shadow: 0px 0px 20px 1px var(--color-secondary);
+    color: var(--color-tertiary);
+}
+
+
+@media screen and (min-width: 480px) {
+	.auth-container,
+	.auth-main {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.psd-mgmt-container {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 380px) {
+    .auth-container {
+        padding-left: 1rem;
+		padding-right: 1rem;
+    }
+	.auth-main {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
