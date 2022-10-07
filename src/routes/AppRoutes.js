@@ -1,6 +1,6 @@
 import Mockman from "mockman-js";
 import { Routes, Route } from "react-router-dom";
-import { NotFoundPage, Login, Signup } from "pages";
+import { NotFoundPage, Login, Signup, Home } from "pages";
 
 const AppRoutes = () => {
   return (
@@ -9,6 +9,8 @@ const AppRoutes = () => {
       <Route element={<Login />} path="/login" />
       <Route element={<Signup />} path="/signup" />
       <Route element={<NotFoundPage />} path="*" />
+      <Route element={<Home />} path="/home" />
+      <Route element={<Home />} path="/" />
     </Routes>
   );
 };

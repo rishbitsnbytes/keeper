@@ -1,7 +1,7 @@
 import App from "App";
 import { makeServer } from "server";
 import { BrowserRouter } from "react-router-dom";
-import { AuthProvider } from "contexts";
+import { AuthProvider, NotesProvider } from "contexts";
 import Portal from "Portal";
 import { ScrollToTop } from "utils";
 import React from "react";
@@ -14,10 +14,12 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <AuthProvider>
-        <ScrollToTop>
-          <Portal />
-          <App />
-        </ScrollToTop>
+        <NotesProvider>
+          <ScrollToTop>
+            <Portal />
+            <App />
+          </ScrollToTop>
+        </NotesProvider>
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>,

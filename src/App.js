@@ -1,11 +1,12 @@
 import "styles/styles.css";
-import { Navbar } from "components";
+import { Navbar, NewNoteModal } from "components";
 import { AppRoutes } from "routes";
 
 const App = () => {
   return (
     <div className="flex-col">
       <Navbar />
+      <NewNoteModal />
       <AppRoutes />
     </div>
   );
